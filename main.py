@@ -29,7 +29,7 @@ async def root():
         "endpoints": {
             "GET /": "Thông tin giới thiệu API",
             "GET /health": "Kiểm tra trạng thái hệ thống",
-            "GET /generate": "Dịch văn bản từ tiếng Anh sang tiếng Việt"
+            "POST /generate": "Dịch văn bản từ tiếng Anh sang tiếng Việt"
         }
     }
 

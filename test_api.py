@@ -5,7 +5,7 @@ LOCAL_URL  = "http://127.0.0.1:8000"
 
 API_URL = LOCAL_URL
 
-RESET = "\033[0m"; GREEN = "\033[92m"; RED = "\033[91m"; CYAN = "\033[96m"
+RESET = "\033[0m"; CYAN = "\033[96m"
 
 
 def call_translate(message: str):
@@ -45,7 +45,7 @@ r = requests.post(f"{API_URL}/generate", params={"message": ""})
 print(f"  Status : {r.status_code}")
 print(f"  Result : {r.json()}\n")
 
-print(f"\n{CYAN}=== GET /translate — thiếu param (lỗi dự kiến 422) ==={RESET}")
-r = requests.get(f"{API_URL}/translate")
+print(f"\n{CYAN}=== POST /generate — thiếu param (lỗi dự kiến 422) ==={RESET}")
+r = requests.post(f"{API_URL}/generate")
 print(f"  Status : {r.status_code}")
 print(f"  Result : {r.json()}\n")
