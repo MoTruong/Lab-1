@@ -253,6 +253,6 @@ print(response.json())
 
 ## Video demo
 
-> 🎬 **Link video:** *(Cập nhật sau khi quay xong)*
+> 🎬 **Link video:** <https://youtu.be/8nZSlD8Asec>
 
 ---
